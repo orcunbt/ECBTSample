@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44593396212D492600CC46EF /* BraintreeCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44593395212D492600CC46EF /* BraintreeCore.framework */; };
+		44593397212D492600CC46EF /* BraintreeCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 44593395212D492600CC46EF /* BraintreeCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4459339A212D492D00CC46EF /* BraintreePayPal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44593399212D492D00CC46EF /* BraintreePayPal.framework */; };
+		4459339B212D492D00CC46EF /* BraintreePayPal.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 44593399212D492D00CC46EF /* BraintreePayPal.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4459339D212D493B00CC46EF /* PayPalDataCollector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4459339C212D493B00CC46EF /* PayPalDataCollector.framework */; };
+		4459339E212D493B00CC46EF /* PayPalDataCollector.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4459339C212D493B00CC46EF /* PayPalDataCollector.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		445933A1212D495500CC46EF /* PayPalOneTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4459339F212D495400CC46EF /* PayPalOneTouch.framework */; };
+		445933A2212D495500CC46EF /* PayPalOneTouch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4459339F212D495400CC46EF /* PayPalOneTouch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		445933A3212D495500CC46EF /* PayPalUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 445933A0212D495400CC46EF /* PayPalUtils.framework */; };
+		445933A4212D495500CC46EF /* PayPalUtils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 445933A0212D495400CC46EF /* PayPalUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		44E7540D212D40D3000AA670 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E7540C212D40D3000AA670 /* AppDelegate.m */; };
 		44E75410212D40D3000AA670 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E7540F212D40D3000AA670 /* ViewController.m */; };
 		44E75413212D40D3000AA670 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44E75411212D40D3000AA670 /* Main.storyboard */; };
@@ -34,7 +44,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		44593398212D492600CC46EF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				445933A4212D495500CC46EF /* PayPalUtils.framework in Embed Frameworks */,
+				445933A2212D495500CC46EF /* PayPalOneTouch.framework in Embed Frameworks */,
+				4459339B212D492D00CC46EF /* BraintreePayPal.framework in Embed Frameworks */,
+				4459339E212D493B00CC46EF /* PayPalDataCollector.framework in Embed Frameworks */,
+				44593397212D492600CC46EF /* BraintreeCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		44593395212D492600CC46EF /* BraintreeCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BraintreeCore.framework; path = Carthage/Build/iOS/BraintreeCore.framework; sourceTree = "<group>"; };
+		44593399212D492D00CC46EF /* BraintreePayPal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BraintreePayPal.framework; path = Carthage/Build/iOS/BraintreePayPal.framework; sourceTree = "<group>"; };
+		4459339C212D493B00CC46EF /* PayPalDataCollector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PayPalDataCollector.framework; path = Carthage/Build/iOS/PayPalDataCollector.framework; sourceTree = "<group>"; };
+		4459339F212D495400CC46EF /* PayPalOneTouch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PayPalOneTouch.framework; path = Carthage/Build/iOS/PayPalOneTouch.framework; sourceTree = "<group>"; };
+		445933A0212D495400CC46EF /* PayPalUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PayPalUtils.framework; path = Carthage/Build/iOS/PayPalUtils.framework; sourceTree = "<group>"; };
 		44E75408212D40D3000AA670 /* ECBTSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECBTSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44E7540B212D40D3000AA670 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		44E7540C212D40D3000AA670 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -58,6 +91,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				445933A3212D495500CC46EF /* PayPalUtils.framework in Frameworks */,
+				445933A1212D495500CC46EF /* PayPalOneTouch.framework in Frameworks */,
+				4459339A212D492D00CC46EF /* BraintreePayPal.framework in Frameworks */,
+				4459339D212D493B00CC46EF /* PayPalDataCollector.framework in Frameworks */,
+				44593396212D492600CC46EF /* BraintreeCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +119,11 @@
 		44E753FF212D40D3000AA670 = {
 			isa = PBXGroup;
 			children = (
+				4459339F212D495400CC46EF /* PayPalOneTouch.framework */,
+				445933A0212D495400CC46EF /* PayPalUtils.framework */,
+				4459339C212D493B00CC46EF /* PayPalDataCollector.framework */,
+				44593399212D492D00CC46EF /* BraintreePayPal.framework */,
+				44593395212D492600CC46EF /* BraintreeCore.framework */,
 				44E7540A212D40D3000AA670 /* ECBTSample */,
 				44E75423212D40D4000AA670 /* ECBTSampleTests */,
 				44E7542E212D40D5000AA670 /* ECBTSampleUITests */,
@@ -142,6 +185,7 @@
 				44E75404212D40D3000AA670 /* Sources */,
 				44E75405212D40D3000AA670 /* Frameworks */,
 				44E75406212D40D3000AA670 /* Resources */,
+				44593398212D492600CC46EF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -434,6 +478,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9A3TTZETCF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ECBTSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +499,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9A3TTZETCF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ECBTSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
